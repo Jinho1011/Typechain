@@ -6,10 +6,12 @@
   "author": "전진호 <gino9940@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js \" "
   },
   "devDependencies": {
     "tsc-watch": "^1.0.27"
+  },
+  "dependencies": {
+    "typescript": "^3.0.3"
   }
 }
